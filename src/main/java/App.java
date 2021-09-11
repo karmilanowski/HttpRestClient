@@ -15,7 +15,7 @@ public class App {
     public static void main(String[] args) {
 
         Screen[] screensList = HttpAPIClient.jsonToPojoConvert(
-                HttpAPIClient.sendRequest("https://central.stacks.pl/rest-api/v1/screens","jacek","ikjerd0612"),Screen[].class);
+                HttpAPIClient.sendRequest("https://central.stacks.pl/rest-api/v1/screens","login","pass"),Screen[].class);
 
         int count =0;
         for (Screen screen : screensList) {
